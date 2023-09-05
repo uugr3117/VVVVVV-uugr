@@ -1308,10 +1308,10 @@ void entityclass::createentity(int xp, int yp, int t, int meta1, int meta2, int 
         entity.rule = 0; //Playable character
         entity.tile = 0;
         entity.colour = 0;
-        entity.cx = 6;
-        entity.cy = 2;
-        entity.w = 12;
-        entity.h = 21;
+        entity.cx = 6; //base 6
+        entity.cy = 2; //base 2
+        entity.w = game.psizex;
+        entity.h = game.psizey;
         entity.dir = 1;
 
         /* Fix wrong y-position if spawning in on conveyor */
@@ -4528,7 +4528,7 @@ bool entityclass::testwallsy( int t, int tx, int ty )
     return true;
 }
 
-void entityclass::applyfriction( int t, float xrate, float yrate )
+void entityclass::applyfriction( int t, float xrate, float yrate, float xmax, float ymax )
 {
     if (!INBOUNDS_VEC(t, entities))
     {
@@ -4540,10 +4540,10 @@ void entityclass::applyfriction( int t, float xrate, float yrate )
     if (entities[t].vx < 0.00f) entities[t].vx += xrate;
     if (entities[t].vy > 0.00f) entities[t].vy -= yrate;
     if (entities[t].vy < 0.00f) entities[t].vy += yrate;
-    if (entities[t].vy > 10.00f) entities[t].vy = 10.0f;
-    if (entities[t].vy < -10.00f) entities[t].vy = -10.0f;
-    if (entities[t].vx > 6.00f) entities[t].vx = 6.0f;
-    if (entities[t].vx < -6.00f) entities[t].vx = -6.0f;
+    if (entities[t].vy > ymax) entities[t].vy = ymax;
+    if (entities[t].vy < -ymax) entities[t].vy = -ymax;
+    if (entities[t].vx > xmax) entities[t].vx = xmax;
+    if (entities[t].vx < -xmax) entities[t].vx = -xmax;
 
     if (SDL_fabsf(entities[t].vx) < xrate) entities[t].vx = 0.0f;
     if (SDL_fabsf(entities[t].vy) < yrate) entities[t].vy = 0.0f;
@@ -4585,7 +4585,7 @@ void entityclass::updateentitylogic( int t )
         {
             entities[t].ay = 3;
         }
-        applyfriction(t, game.inertia, 0.25f);
+        applyfriction(t, game.xinertia, game.yinertia, game.xmax, game.ymax);
     }
 
     entities[t].newxp = entities[t].xp + entities[t].vx;

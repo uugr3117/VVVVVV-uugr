@@ -2616,12 +2616,12 @@ void gameinput(void)
 
                 if(game.press_left)
                 {
-                    obj.entities[ie].ax = -3;
+                    obj.entities[ie].ax = -game.acceleration;
                     obj.entities[ie].dir = 0;
                 }
                 else if (game.press_right)
                 {
-                    obj.entities[ie].ax = 3;
+                    obj.entities[ie].ax = game.acceleration;
                     obj.entities[ie].dir = 1;
                 }
             }

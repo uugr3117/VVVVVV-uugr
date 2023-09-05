@@ -314,7 +314,13 @@ void Game::init(void)
     hardestroomdeaths = 0;
     currentroomdeaths=0;
 
-    inertia = 1.1f;
+    xinertia = 1.1f; //base is 1.1
+    xmax = 6.f; //base is 6
+    ymax = 10.f; //base is 10
+    yinertia = 0.25f; //base is 0.25
+    acceleration = 3.f; //base is 3
+    psizex = 2; //base is 12
+    psizey = 3; //base is 21
     swnmode = false;
     swntimer = 0;
     swngame = SWN_NONE; // Not playing sine wave ninja!

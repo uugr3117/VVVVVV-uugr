@@ -151,7 +151,7 @@ public:
 
     bool testwallsy(int t, int tx, int ty);
 
-    void applyfriction(int t, float xrate, float yrate);
+    void applyfriction(int t, float xrate, float yrate, float xmax, float ymax);
 
     void updateentitylogic(int t);
 

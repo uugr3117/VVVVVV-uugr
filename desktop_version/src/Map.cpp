@@ -813,8 +813,8 @@ void mapclass::resetplayer(const bool player_died)
             obj.entities[i].size = 0;
             obj.entities[i].cx = 6;
             obj.entities[i].cy = 2;
-            obj.entities[i].w = 12;
-            obj.entities[i].h = 21;
+            obj.entities[i].w = game.psizex;
+            obj.entities[i].h = game.psizey;
         }
 
         // If we entered a tower as part of respawn, reposition camera

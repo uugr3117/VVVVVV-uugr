@@ -480,7 +480,14 @@ public:
     int edteleportent;
     bool completestop;
 
-    float inertia;
+    float xinertia;
+    float yinertia;
+    float xmax;
+    float ymax;
+    float frictionrate;
+    float acceleration;
+    int psizex;
+    int psizey;
 
     int companion;
     SDL_Rect teleblock;
