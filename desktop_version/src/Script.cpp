@@ -899,12 +899,19 @@ void scriptclass::run(void)
                 if (INBOUNDS_VEC(i, obj.entities) && ss_toi(words[2]) == 0)
                 {
                     obj.entities[i].tile = 0;
+                    obj.entities[i].w = 2;
+                    obj.entities[i].h = 3;
                 }
                 else if (INBOUNDS_VEC(i, obj.entities))
                 {
                     obj.entities[i].tile = 144;
+                    obj.entities[i].w = 12;
+                    obj.entities[i].h = 21;
                 }
             }
+
+            //make a changemood variant called "changesize"
+
             else if (words[0] == "changecustommood")
             {
                 if (words[1] == "player")

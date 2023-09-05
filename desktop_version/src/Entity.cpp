@@ -1456,14 +1456,14 @@ void entityclass::createentity(int xp, int yp, int t, int meta1, int meta2, int 
         }
 
         entity.cy = -1;
-        entity.w = 32;
+        entity.w = 16;
         entity.h = 10;
         entity.behave = meta1;
         entity.para = meta2;
         entity.onentity = 1;
         entity.animate = 100;
 
-        createblock(0, xp, yp, 32, 8);
+        createblock(0, xp, yp, 16, 8);
         break;
     case 4: //Breakable blocks
         entity.rule = 6;
