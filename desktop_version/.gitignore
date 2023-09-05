@@ -9,6 +9,7 @@ VVVVVV.exe
 VVVVVV
 *.a
 *.gch
+*.vs/
 src/Version.h.out
 src/InterimVersion.out.c
 
