@@ -787,6 +787,8 @@ void entityclass::createblock( int t, int xp, int yp, int w, int h, int trig /*=
     bool reuse = false;
     for (size_t i = 0; i < blocks.size(); ++i)
     {
+        //if (i == 2 && game.crunkvar) { game.crunkvar = false; break; }
+
         if (blocks[i].wp == 0
         && blocks[i].hp == 0
         && blocks[i].rect.w == 0
@@ -1387,7 +1389,7 @@ void entityclass::createentity(int xp, int yp, int t, int meta1, int meta2, int 
           if (gridmatch(p1, p2, p3, p4, -32, -40, 352, 264)) entity.tile = 27;
         }
 
-        entity.w = 32;
+        entity.w = game.platw * 8;
         entity.h = 8;
 
         if (meta1 <= 1) vertplatforms = true;
@@ -1433,12 +1435,12 @@ void entityclass::createentity(int xp, int yp, int t, int meta1, int meta2, int 
 
         entity.isplatform = true;
 
-        createblock(0, xp, yp, 32, 8);
+        createblock(0, xp, yp, game.platw * 8, 8);
         break;
     case 3: //Disappearing platforms
         entity.rule = 3;
         entity.type = 2;
-        entity.size = 2;
+        entity.size = 2; //base 4??
         entity.tile = 2;
         //appearance again depends on location
         if(customplatformtile>0)
@@ -1456,14 +1458,14 @@ void entityclass::createentity(int xp, int yp, int t, int meta1, int meta2, int 
         }
 
         entity.cy = -1;
-        entity.w = 16;
+        entity.w = game.platw * 8; //base 32
         entity.h = 10;
         entity.behave = meta1;
         entity.para = meta2;
         entity.onentity = 1;
         entity.animate = 100;
 
-        createblock(0, xp, yp, 16, 8);
+        createblock(0, xp, yp, game.platw * 8, 8); //base w 32
         break;
     case 4: //Breakable blocks
         entity.rule = 6;

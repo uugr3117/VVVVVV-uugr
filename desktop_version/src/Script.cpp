@@ -899,14 +899,10 @@ void scriptclass::run(void)
                 if (INBOUNDS_VEC(i, obj.entities) && ss_toi(words[2]) == 0)
                 {
                     obj.entities[i].tile = 0;
-                    obj.entities[i].w = 2;
-                    obj.entities[i].h = 3;
                 }
                 else if (INBOUNDS_VEC(i, obj.entities))
                 {
                     obj.entities[i].tile = 144;
-                    obj.entities[i].w = 12;
-                    obj.entities[i].h = 21;
                 }
             }
 
@@ -962,6 +958,12 @@ void scriptclass::run(void)
                     game.acceleration = 0.4;
                     game.xinertia = 0.1f;
                 }
+            }
+
+            //change platform size
+            else if (words[0] == "setplatsize")
+            {
+                game.platw = ss_toi(words[1]);
             }
 
             else if (words[0] == "changecustommood")

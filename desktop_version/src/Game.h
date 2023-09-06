@@ -488,6 +488,7 @@ public:
     float acceleration;
     int psizex;
     int psizey;
+    int platw;
 
     int companion;
     SDL_Rect teleblock;

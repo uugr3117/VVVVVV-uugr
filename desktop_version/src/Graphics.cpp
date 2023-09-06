@@ -1999,11 +1999,7 @@ void Graphics::drawentity(const int i, const int yoff)
 
         tpoint.x = xp;
         tpoint.y = yp - yoff;
-        int thiswidth = 4;
-        if (obj.entities[i].size == 8)
-        {
-            thiswidth = 8;
-        }
+        int thiswidth = game.platw;
         for (int ii = 0; ii < thiswidth; ii++)
         {
             drawRect = tiles_rect;
