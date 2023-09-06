@@ -910,7 +910,59 @@ void scriptclass::run(void)
                 }
             }
 
-            //make a changemood variant called "changesize"
+
+            // CUSTOM COMMANDS
+
+            //changemood variant called "changesize"
+            else if (words[0] == "changesize")
+            {
+                int crewmate = getcrewmanfromname(words[1]);
+                if (crewmate != -1) i = crewmate; // Ensure AEM is kept
+
+                if (INBOUNDS_VEC(i, obj.entities) && ss_toi(words[2]) == 0)
+                {
+                    obj.entities[i].tile = 0;
+                    obj.entities[i].w = 12;
+                    obj.entities[i].h = 21;
+
+                    obj.entities[i].yp -= 15;
+                }
+                else if (INBOUNDS_VEC(i, obj.entities))
+                {
+                    obj.entities[i].tile = 156;
+                    obj.entities[i].w = 4;
+                    obj.entities[i].h = 6;
+                    obj.entities[i].yp += 15;
+                }
+            }
+
+            //double speed powerup
+            else if (words[0] == "changespeed")
+            {
+                if (ss_toi(words[1]) == 0)
+                {
+                    game.xmax = 6.;
+                }
+                else if (ss_toi(words[1]) == 1)
+                {
+                    game.xmax = 12.;
+                }
+            }
+
+            //ice blocks
+            else if (words[0] == "icemode")
+            {
+                if (ss_toi(words[1]) == 0)
+                {
+                    game.acceleration = 3.;
+                    game.xinertia = 1.1f;
+                }
+                else if (ss_toi(words[1]) == 1)
+                {
+                    game.acceleration = 0.4;
+                    game.xinertia = 0.1f;
+                }
+            }
 
             else if (words[0] == "changecustommood")
             {
