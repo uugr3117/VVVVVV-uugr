@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\desktop_version",
+    "\\desktop_version\\build"
   ],
-  "SelectedNode": "\\C:\\Users\\max.cohen\\Source\\Repos\\VVVVVV-uugr",
+  "SelectedNode": "\\desktop_version\\build\\VVVVVV.sln",
   "PreviewInSolutionExplorer": false
 }
