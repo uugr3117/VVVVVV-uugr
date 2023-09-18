@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\desktop_version",
-    "\\desktop_version\\build"
+    "\\desktop_version"
   ],
-  "SelectedNode": "\\desktop_version\\build\\VVVVVV.sln",
+  "SelectedNode": "\\desktop_version\\CMakeLists.txt",
   "PreviewInSolutionExplorer": false
 }
