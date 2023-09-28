@@ -918,16 +918,20 @@ void scriptclass::run(void)
                 if (INBOUNDS_VEC(i, obj.entities) && ss_toi(words[2]) == 0)
                 {
                     obj.entities[i].tile = 0;
-                    obj.entities[i].w = 12;
-                    obj.entities[i].h = 21;
+                    game.psizex = 12;
+                    game.psizey = 21;
+                    obj.entities[i].w = game.psizex;
+                    obj.entities[i].h = game.psizey;
 
                     obj.entities[i].yp -= 15;
                 }
                 else if (INBOUNDS_VEC(i, obj.entities))
                 {
                     obj.entities[i].tile = 156;
-                    obj.entities[i].w = 4;
-                    obj.entities[i].h = 6;
+                    game.psizex = 4;
+                    game.psizey = 6;
+                    obj.entities[i].w = game.psizex;
+                    obj.entities[i].h = game.psizey;
                     obj.entities[i].yp += 15;
                 }
             }
