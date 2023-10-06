@@ -1956,7 +1956,51 @@ void mapclass::loadlevel(int rx, int ry)
         //do the appear/remove roomname here
         break;
     }
+
+
+    case 13: //Custom Tower
+        graphics.towerbg.tdrawback = true;
+        minitowermode = false;
+        tower.minitowermode = false;
+        graphics.towerbg.scrolldir = 0;
+        setbgobjlerp(graphics.towerbg);
+
+        setroomname("The Tower");
+        tileset = 1;
+        background = 3;
+        towermode = true;
+
+        //testing this
+        //obj.entities[0].yp = 6200;
+        //ypos = 6200;
+
+        //All the entities for here are just loaded here; it's essentially one room after all
+        //WORD FOR GET BACK HERE: "PERSNICKETY"
+
+        obj.createentity(48, 5456, 10, 1, 505007); // (savepoint)
+        obj.createentity(224, 4528, 10, 1, 505017); // (savepoint)
+        obj.createentity(232, 4168, 10, 0, 505027); // (savepoint)
+        obj.createentity(280, 3816, 10, 1, 505037); // (savepoint)
+        obj.createentity(152, 3552, 10, 1, 505047); // (savepoint)
+        obj.createentity(216, 3280, 10, 0, 505057); // (savepoint)
+        obj.createentity(216, 4808, 10, 1, 505067); // (savepoint)
+        obj.createentity(72, 3096, 10, 0, 505077); // (savepoint)
+        obj.createentity(176, 2600, 10, 0, 505087); // (savepoint)
+        obj.createentity(216, 2392, 10, 0, 505097); // (savepoint)
+        obj.createentity(152, 1184, 10, 1, 505107); // (savepoint)
+        obj.createentity(152, 912, 10, 1, 505117); // (savepoint)
+        obj.createentity(152, 536, 10, 1, 505127); // (savepoint)
+        obj.createentity(120, 5136, 10, 0, 505137); // (savepoint)
+        obj.createentity(144, 1824, 10, 0, 505147); // (savepoint)
+        obj.createentity(72, 2904, 10, 0, 505157); // (savepoint)
+        obj.createentity(224, 1648, 10, 1, 505167); // (savepoint)
+        obj.createentity(112, 5280, 10, 1, 50517); // (savepoint)
+
+        obj.createentity(24, 4216, 9, 7); // (shiny trinket)
+        obj.createentity(280, 3216, 9, 8); // (shiny trinket)
+        break;
     }
+
     //The room's loaded: now we fill out damage blocks based on the tiles.
     if (towermode)
     {

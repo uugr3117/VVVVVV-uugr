@@ -970,6 +970,22 @@ void scriptclass::run(void)
                 game.platw = ss_toi(words[1]);
             }
 
+            else if (words[0] == "tower") {
+                graphics.towerbg.tdrawback = true;
+                map.minitowermode = false;
+                map.tower.minitowermode = false;
+                graphics.towerbg.scrolldir = 0;
+                map.setbgobjlerp(graphics.towerbg);
+
+                map.setroomname("The Tower");
+                map.tileset = 1;
+                map.background = 3;
+                map.towermode = true;
+
+                //setting up for custom tower
+                map.ypos = 4560;
+            }
+
             else if (words[0] == "changecustommood")
             {
                 if (words[1] == "player")
