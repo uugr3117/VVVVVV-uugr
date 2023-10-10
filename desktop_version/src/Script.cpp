@@ -923,7 +923,9 @@ void scriptclass::run(void)
                     obj.entities[i].w = game.psizex;
                     obj.entities[i].h = game.psizey;
 
-                    obj.entities[i].yp -= 15;
+                    if (game.istiny) { obj.entities[i].yp -= 7; obj.entities[i].xp -= 4; }
+
+                    game.istiny = false;
                 }
                 else if (INBOUNDS_VEC(i, obj.entities))
                 {
@@ -932,7 +934,10 @@ void scriptclass::run(void)
                     game.psizey = 6;
                     obj.entities[i].w = game.psizex;
                     obj.entities[i].h = game.psizey;
-                    obj.entities[i].yp += 15;
+                    
+                    if (!game.istiny) { obj.entities[i].yp += 7; obj.entities[i].xp += 4; }
+
+                    game.istiny = true;
                 }
             }
 

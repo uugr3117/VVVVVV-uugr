@@ -2595,7 +2595,7 @@ bool entityclass::updateentities( int i )
             else if (entities[i].state == 4)
             {
                 //restart!
-                createblock(0, entities[i].xp, entities[i].yp, 32, 8);
+                createblock(0, entities[i].xp, entities[i].yp, game.platw*8, 8);
                 entities[i].state = 4;
                 entities[i].invis = false;
                 entities[i].walkingframe--;
@@ -3473,7 +3473,7 @@ void entityclass::animateentities( int _i )
                 }
             }
 
-            if (game.deathseq > -1)
+            if (game.deathseq > -1 && !game.istiny)
             {
                 entities[_i].drawframe=13;
                 if (entities[_i].dir == 1) entities[_i].drawframe = 12;

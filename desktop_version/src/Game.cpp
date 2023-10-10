@@ -322,6 +322,7 @@ void Game::init(void)
     psizex = 12; //base is 12
     psizey = 21; //base is 21
     platw = 4;
+    istiny = false;
     swnmode = false;
     swntimer = 0;
     swngame = SWN_NONE; // Not playing sine wave ninja!

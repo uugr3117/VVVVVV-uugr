@@ -489,6 +489,7 @@ public:
     int psizex;
     int psizey;
     int platw;
+    bool istiny;
 
     int companion;
     SDL_Rect teleblock;
