@@ -1977,7 +1977,7 @@ void mapclass::loadlevel(int rx, int ry)
         //All the entities for here are just loaded here; it's essentially one room after all
         //WORD FOR GET BACK HERE: "PERSNICKETY"
 
-        obj.createentity(48, 5456, 10, 1, 505007); // (savepoint)
+        /*obj.createentity(48, 5456, 10, 1, 505007); // (savepoint)
         obj.createentity(224, 4528, 10, 1, 505017); // (savepoint)
         obj.createentity(232, 4168, 10, 0, 505027); // (savepoint)
         obj.createentity(280, 3816, 10, 1, 505037); // (savepoint)
@@ -1997,7 +1997,7 @@ void mapclass::loadlevel(int rx, int ry)
         obj.createentity(112, 5280, 10, 1, 50517); // (savepoint)
 
         obj.createentity(24, 4216, 9, 7); // (shiny trinket)
-        obj.createentity(280, 3216, 9, 8); // (shiny trinket)
+        obj.createentity(280, 3216, 9, 8); // (shiny trinket)*/
         break;
     }
 

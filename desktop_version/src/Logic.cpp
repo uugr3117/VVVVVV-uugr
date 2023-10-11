@@ -1226,7 +1226,7 @@ void gamelogic(void)
         else if (map.towermode)
         {
             //Always wrap except for the very top and very bottom of the tower
-            if(map.ypos>=500 && map.ypos <=5000)
+            if(map.ypos>=100 && map.ypos <=4200)
             {
                 for (size_t i = 0; i < obj.entities.size();  i++)
                 {
@@ -1249,13 +1249,13 @@ void gamelogic(void)
                 if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                 {
                     obj.entities[player].xp += 320;
-                    obj.entities[player].yp -= (671 * 8);
-                    GOTOROOM(108, 109);
+                    GOTOROOM(10, 0); //17,0
                 }
-                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
+                else if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
                 {
                     obj.entities[player].xp -= 320;
-                    GOTOROOM(110, 104);
+                    obj.entities[player].yp -= (240 * 18);
+                    GOTOROOM(3, 0); //19,19
                 }
             }
         }
