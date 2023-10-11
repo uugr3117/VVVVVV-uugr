@@ -609,6 +609,9 @@
             <edentity x="713" y="10" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">block</edentity>
             <edentity x="713" y="11" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">return</edentity>
             <edentity x="760" y="0" t="19" p1="40" p2="30" p3="0" p4="0" p5="320" p6="240">towerfix2_load</edentity>
+            <edentity x="606" y="312" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">idea: room w lots of tiny</edentity>
+            <edentity x="606" y="313" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">spike pits so being tiny</edentity>
+            <edentity x="606" y="314" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">is a nuisance</edentity>
         </edEntities>
         <levelMetaData>
             <edLevelClass tileset="0" tilecol="19" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
@@ -758,7 +761,7 @@
             <edLevelClass tileset="0" tilecol="10" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
             <edLevelClass tileset="0" tilecol="11" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
             <edLevelClass tileset="0" tilecol="12" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
-            <edLevelClass tileset="0" tilecol="13" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
+            <edLevelClass tileset="1" tilecol="0" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
             <edLevelClass tileset="0" tilecol="14" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
             <edLevelClass tileset="0" tilecol="15" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
             <edLevelClass tileset="0" tilecol="16" platx1="0" platy1="0" platx2="320" platy2="240" platv="4" enemyx1="0" enemyy1="0" enemyx2="320" enemyy2="240" enemytype="0" directmode="0" warpdir="0"></edLevelClass>
