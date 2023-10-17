@@ -923,7 +923,17 @@ void scriptclass::run(void)
                     obj.entities[i].w = game.psizex;
                     obj.entities[i].h = game.psizey;
 
-                    if (game.istiny) { obj.entities[i].yp -= 7; obj.entities[i].xp -= 4; }
+                    if (game.istiny) {
+                        if (!game.gravitycontrol) { obj.entities[i].yp -= 14; }
+                        //else { obj.entities[i].yp -= 14; }
+
+                        //need kludge to prevent inf loop
+                        int limit = 500;
+                        while (!obj.testwallsx(i, obj.entities[i].xp, obj.entities[i].yp, true) && limit > 0) {
+                            obj.entities[i].xp--;
+                            limit--;
+                        }
+                    }
 
                     game.istiny = false;
                 }
@@ -935,7 +945,12 @@ void scriptclass::run(void)
                     obj.entities[i].w = game.psizex;
                     obj.entities[i].h = game.psizey;
                     
-                    if (!game.istiny) { obj.entities[i].yp += 7; obj.entities[i].xp += 4; }
+                    if (!game.istiny) { 
+                        if (!game.gravitycontrol) { obj.entities[i].yp += 14; }
+                        //else { obj.entities[i].yp -= 14; }
+
+                        obj.entities[i].xp += 4;
+                    }
 
                     game.istiny = true;
                 }
