@@ -988,7 +988,7 @@ void scriptclass::run(void)
                 map.towermode = true;
 
                 //setting up for custom tower
-                map.ypos = 4560;
+                map.ypos = 4592;
             }
 
             else if (words[0] == "changecustommood")
