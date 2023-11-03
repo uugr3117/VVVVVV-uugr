@@ -1,0 +1,20 @@
+V1:
+ - initial draft
+
+V2:
+ - fixed tower trinket ID bug
+ - fixed disappearing platform positions for 2nd tower trinket
+ - made "The Cruel Barbarity of Ice Physics" slightly easier
+ - buffed "Slippery When Wet"
+
+(todo for v2)
+ - final level create
+ - add the Ultimate Challenge
+ - fix trench room
+ - fix the tiny level softlock (Free at Last)
+ - fix tower 2nd trinket skip
+ - add backings
+ - start on overworld?
+ - Comms Relay cutscene
+ - make some ice levels harder
+ - fix icemove right press bug
