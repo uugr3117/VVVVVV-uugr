@@ -18,3 +18,4 @@ V2:
  - Comms Relay cutscene
  - make some ice levels harder
  - fix icemove right press bug
+ - nerf gravity mesh
