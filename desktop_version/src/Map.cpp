@@ -1438,6 +1438,8 @@ void mapclass::loadlevel(int rx, int ry)
 
     roomname_special = false;
 
+    t = 12;
+
     switch(t)
     {
 #ifdef MAKEANDPLAY

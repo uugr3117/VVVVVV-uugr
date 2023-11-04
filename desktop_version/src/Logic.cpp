@@ -1196,13 +1196,7 @@ void gamelogic(void)
                 if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                 {
                     obj.entities[player].xp += 320;
-                    GOTOROOM(48, 52);
-                }
-                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 9999)
-                {
-                    obj.entities[player].xp -= 320;
-                    obj.entities[player].yp -= (71*8);
-                    GOTOROOM(game.roomx + 1, game.roomy+1);
+                    GOTOROOM(game.roomx - 1, game.roomy);
                 }
             }
             else
@@ -1231,19 +1225,19 @@ void gamelogic(void)
                     if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                     {
                         obj.entities[player].xp += 320;
-                        obj.entities[player].yp -= (71 * 8);
-                        GOTOROOM(8, 13);
+                        obj.entities[player].yp -= (240 * 3);
+                        GOTOROOM(game.roomx - 1, game.roomy);
                     }
                     if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 720)
                     {
                         obj.entities[player].xp -= 320;
                         obj.entities[player].yp -= (240 * 3);
-                        GOTOROOM(6, 16);
+                        GOTOROOM(game.roomx + 1, game.roomy - 4);
                     }
                 }
             }
         }
-        else if (map.towermode)
+        else if (map.towermode && !map.minitowermode)
         {
             //Always wrap except for the very top and very bottom of the tower
             if(map.ypos>=100 && map.ypos <=4200)
@@ -1269,13 +1263,13 @@ void gamelogic(void)
                 if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                 {
                     obj.entities[player].xp += 320;
-                    GOTOROOM(10, 0); //17,0
+                    GOTOROOM(17, 0); //17,0
                 }
                 else if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
                 {
                     obj.entities[player].xp -= 320;
                     obj.entities[player].yp -= (240 * 18);
-                    GOTOROOM(3, 0); //19,19
+                    GOTOROOM(19, 19); //19,19
                 }
             }
         }
