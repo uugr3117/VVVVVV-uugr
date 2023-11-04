@@ -1958,7 +1958,8 @@ void Graphics::drawentity(const int i, const int yoff)
             wrappedPoint.y -= 232;
         }
 
-        const bool isInWrappingAreaOfTower = map.towermode && !map.minitowermode && map.ypos >= 500 && map.ypos <= 5000;
+        //shitler
+        const bool isInWrappingAreaOfTower = (map.towermode && !map.minitowermode && map.ypos >= 500 && map.ypos <= 5000) || (map.towermode && map.minitowermode && map.ypos >= 300 && map.ypos <= 680);
         if (wrapX && (map.warpx || isInWrappingAreaOfTower))
         {
             drawRect = sprites_rect;

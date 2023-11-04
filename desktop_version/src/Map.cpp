@@ -1376,7 +1376,7 @@ void mapclass::loadlevel(int rx, int ry)
                 int player = obj.getplayer();
                 if (INBOUNDS_VEC(player, obj.entities))
                 {
-                    obj.entities[player].yp += (671 * 8);
+                    obj.entities[player].yp += (671 * 8); //THIS IS THE CAUSE OF THE GRAPHICS BUG FRAME 1!!! -- shitler
                 }
 
                 ypos = (700-29) * 8;

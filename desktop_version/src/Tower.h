@@ -22,9 +22,11 @@ public:
 
     short back[40 * 120];
     short contents[40 * 700];
-    short minitower[40 * 100];
+    short minitower[4 * 1300];
 
     bool minitowermode;
+
+    int framestomove;
 };
 
 

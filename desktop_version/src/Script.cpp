@@ -992,7 +992,6 @@ void scriptclass::run(void)
 
             else if (words[0] == "tower") {
                 graphics.towerbg.tdrawback = true;
-                graphics.towerbg.scrolldir = 0;
                 map.setbgobjlerp(graphics.towerbg);
 
                 map.tileset = 1;
@@ -1003,21 +1002,34 @@ void scriptclass::run(void)
 
                 if (ss_toi(words[1]) == 0) {
                     map.ypos = 4592;
+                    graphics.towerbg.scrolldir = 0;
                     map.minitowermode = false;
                     map.tower.minitowermode = false;
+                    map.cameramode = 1;
+                    map.colsuperstate = 0;
                     map.setroomname("The Tower");
                 }                
                 else if (ss_toi(words[1]) == 1) {
-                    map.ypos = 900;
+                    map.ypos = 750;
+                    graphics.towerbg.scrolldir = 0;
                     map.minitowermode = true;
                     map.tower.minitowermode = true;
+                    map.cameramode = 1;
+                    map.colsuperstate = 0;
                     map.setroomname("XxX *--* THE TOWER *--* XxX");
+
+                    map.tower.loadminitower1();
                 }
                 else if (ss_toi(words[1]) == 2) {
                     map.ypos = 0;
+                    graphics.towerbg.scrolldir = 1;
                     map.minitowermode = true;
                     map.tower.minitowermode = true;
-                    map.setroomname("The Unower");
+                    map.cameramode = 1;
+                    map.colsuperstate = 0;
+                    map.setroomname("The Untower");
+
+                    map.tower.loadminitower2();
                 }
 
             }

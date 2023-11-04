@@ -245,14 +245,20 @@ void gamelogic(void)
             }
             else if (map.cameramode == 1)
             {
-                //move normally
+                //move normally, less than 1px/frame
                 if(graphics.towerbg.scrolldir==0)
                 {
                     map.ypos -= 2;
                 }
                 else
                 {
-                    map.ypos += 2;
+                    if (map.tower.framestomove == 0) {
+                        map.ypos += 1;
+                        map.tower.framestomove = 1;
+                    }
+                    else {
+                        map.tower.framestomove--;
+                    }
                 }
             }
             else if (map.cameramode == 2)
@@ -316,9 +322,9 @@ void gamelogic(void)
         }
         if (map.towermode && map.minitowermode)
         {
-            if (map.ypos >= 568)
+            if (map.ypos >= 960)
             {
-                map.ypos = 568;
+                map.ypos = 960;
             } //100-29 * 8 = 568
         }
         else
@@ -1180,18 +1186,19 @@ void gamelogic(void)
         }
 
         //Right so! Screenwraping for tower:
+        //CODE WORD: BUMBLEBERRY
         if (map.towermode && map.minitowermode)
         {
             if (graphics.towerbg.scrolldir == 1)
             {
-                //This is minitower 1!
+                //This is the trinket tower!
                 int player = obj.getplayer();
                 if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                 {
                     obj.entities[player].xp += 320;
                     GOTOROOM(48, 52);
                 }
-                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
+                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 9999)
                 {
                     obj.entities[player].xp -= 320;
                     obj.entities[player].yp -= (71*8);
@@ -1200,26 +1207,39 @@ void gamelogic(void)
             }
             else
             {
-                //This is minitower 2!
+                //This is the speedy tower! includes wrapping
                 int player = obj.getplayer();
-                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
+
+                if (obj.entities[player].yp >= 60 && obj.entities[player].yp <= 720)
                 {
-                    if (obj.entities[player].yp > 300)
+                    for (size_t i = 0; i < obj.entities.size(); i++)
+                    {
+                        if (obj.entities[i].xp <= -10)
+                        {
+                            obj.entities[i].xp += 320;
+                            obj.entities[i].lerpoldxp += 320;
+                        }
+                        else if (obj.entities[i].xp > 310)
+                        {
+                            obj.entities[i].xp -= 320;
+                            obj.entities[i].lerpoldxp -= 320;
+                        }
+                    }
+                }
+
+                else {
+                    if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                     {
                         obj.entities[player].xp += 320;
                         obj.entities[player].yp -= (71 * 8);
-                        GOTOROOM(50, 54);
+                        GOTOROOM(8, 13);
                     }
-                    else
+                    if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 720)
                     {
-                        obj.entities[player].xp += 320;
-                        GOTOROOM(50, 53);
+                        obj.entities[player].xp -= 320;
+                        obj.entities[player].yp -= (240 * 3);
+                        GOTOROOM(6, 16);
                     }
-                }
-                if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
-                {
-                    obj.entities[player].xp -= 320;
-                    GOTOROOM(52, 53);
                 }
             }
         }
