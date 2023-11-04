@@ -2,20 +2,21 @@ V1:
  - initial draft
 
 V2:
+ - CREATED FINAL LEVEL! 21 new rooms, one new trinket, and a final crewmate to collect
+ - added scripting functionality for minitowers
  - fixed tower trinket ID bug
  - fixed disappearing platform positions for 2nd tower trinket
- - made "The Cruel Barbarity of Ice Physics" slightly easier
- - buffed "Slippery When Wet"
+ - slightly nerfed "Gravity Mesh" and "The Cruel Barbarity of Ice Physics"
+ - buffed "The Carew Family", "The Obnoxious Room", and "Slippery When Wet"
+ - pseudo-softlock in "Free at Last" is now hopefully easier to avoid (not entirely removed yet though)
+ - fixed a skip in "Trenches in Miniature"
+ - improved visual transition into and out of ice
 
-(todo for v2)
- - final level create
+(todo for v3)
+ - overworld
  - add the Ultimate Challenge
- - fix trench room
  - fix the tiny level softlock (Free at Last)
- - fix tower 2nd trinket skip
+ - fix tower 2nd trinket skip (make conveyor sequence before longer)
  - add backings
- - start on overworld?
  - Comms Relay cutscene
- - make some ice levels harder
  - fix icemove right press bug
- - nerf gravity mesh
