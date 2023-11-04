@@ -992,18 +992,34 @@ void scriptclass::run(void)
 
             else if (words[0] == "tower") {
                 graphics.towerbg.tdrawback = true;
-                map.minitowermode = false;
-                map.tower.minitowermode = false;
                 graphics.towerbg.scrolldir = 0;
                 map.setbgobjlerp(graphics.towerbg);
 
-                map.setroomname("The Tower");
                 map.tileset = 1;
                 map.background = 3;
                 map.towermode = true;
 
                 //setting up for custom tower
-                map.ypos = 4592;
+
+                if (ss_toi(words[1]) == 0) {
+                    map.ypos = 4592;
+                    map.minitowermode = false;
+                    map.tower.minitowermode = false;
+                    map.setroomname("The Tower");
+                }                
+                else if (ss_toi(words[1]) == 1) {
+                    map.ypos = 900;
+                    map.minitowermode = true;
+                    map.tower.minitowermode = true;
+                    map.setroomname("XxX *--* THE TOWER *--* XxX");
+                }
+                else if (ss_toi(words[1]) == 2) {
+                    map.ypos = 0;
+                    map.minitowermode = true;
+                    map.tower.minitowermode = true;
+                    map.setroomname("The Unower");
+                }
+
             }
 
             else if (words[0] == "changecustommood")
