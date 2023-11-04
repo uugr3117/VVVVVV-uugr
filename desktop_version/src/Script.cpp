@@ -924,8 +924,7 @@ void scriptclass::run(void)
                     obj.entities[i].h = game.psizey;
 
                     if (game.istiny) {
-                        if (!game.gravitycontrol) { obj.entities[i].yp -= 14; }
-                        //else { obj.entities[i].yp -= 14; }
+                        if (!game.gravitycontrol) { obj.entities[i].yp -= 16; }
 
                         //need kludge to prevent inf loop
                         int limit = 500;

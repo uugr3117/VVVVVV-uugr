@@ -916,7 +916,11 @@ void gamelogic(void)
                     {
                         game.deathseq = 30;
                     }
-                    else if (obj.entities[player].yp-map.ypos >= 208)
+                    else if (!game.istiny && obj.entities[player].yp-map.ypos >= 208)
+                    {
+                        game.deathseq = 30;
+                    }
+                    else if (obj.entities[player].yp - map.ypos >= 216)
                     {
                         game.deathseq = 30;
                     }
@@ -1228,11 +1232,10 @@ void gamelogic(void)
                         obj.entities[player].yp -= (240 * 3);
                         GOTOROOM(game.roomx - 1, game.roomy);
                     }
-                    if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 720)
+                    if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
                     {
                         obj.entities[player].xp -= 320;
-                        obj.entities[player].yp -= (240 * 3);
-                        GOTOROOM(game.roomx + 1, game.roomy - 4);
+                        GOTOROOM(game.roomx + 1, game.roomy - 3);
                     }
                 }
             }

@@ -49,6 +49,7 @@ bool entityclass::checktowerspikes(int t)
     if (map.towerspikecollide(tempw, tempy)) return true;
     if (map.towerspikecollide(tempx, temph)) return true;
     if (map.towerspikecollide(tempw, temph)) return true;
+
     if (temprect.h >= 12)
     {
         int tpy1 = getgridpoint(temprect.y + 6);
