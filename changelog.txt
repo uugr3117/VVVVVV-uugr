@@ -14,7 +14,7 @@ V2:
 
 V3:
  - nerfed "One Giant Leap", "The Untower", "Frozen Rampart", and "Bitter Arctic Depths"
- - shrank the map to 20x17
+ - shrank the map to 15x20
 
 (todo for v3)
  - overworld
@@ -24,3 +24,4 @@ V3:
  - add backings
  - Comms Relay cutscene
  - fix icemove right press bug
+ - fix tinymode hitboxes
