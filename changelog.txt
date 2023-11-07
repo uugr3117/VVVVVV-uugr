@@ -12,6 +12,10 @@ V2:
  - fixed a skip in "Trenches in Miniature"
  - improved visual transition into and out of ice
 
+V3:
+ - nerfed "One Giant Leap", "The Untower", "Frozen Rampart", and "Bitter Arctic Depths"
+ - shrank the map to 20x17
+
 (todo for v3)
  - overworld
  - add the Ultimate Challenge
