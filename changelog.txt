@@ -18,7 +18,6 @@ V3:
  - shrank the map to 15x20
 
 (todo for v3)
- - overworld
  - add the Ultimate Challenge
  - fix the tiny level softlock (Free at Last)
  - fix tower 2nd trinket skip (make conveyor sequence before longer)
