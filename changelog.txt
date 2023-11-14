@@ -13,6 +13,7 @@ V2:
  - improved visual transition into and out of ice
 
 V3:
+ - ADDED AN OVERWORLD! the map is now completely filled out (in draft state) and can be played start-to-finish
  - nerfed "One Giant Leap", "The Untower", "Frozen Rampart", and "Bitter Arctic Depths"
  - shrank the map to 15x20
 

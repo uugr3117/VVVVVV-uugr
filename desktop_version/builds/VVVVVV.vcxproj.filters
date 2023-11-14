@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\BinaryBlob.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\BlockV.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\ButtonGlyphs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\CustomLevels.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\CWrappers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Ent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Entity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\FileSystemUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Finalclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Font.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Graphics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\GraphicsResources.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\GraphicsUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\KeyPoll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Labclass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Localization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\LocalizationMaint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\LocalizationStorage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Logic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Map.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Music.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Otherlevel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\preloader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Render.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\RenderFixed.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\RoomnameTranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Screen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Script.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Scripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Spacestation2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\TerminalScripts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Textbox.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Tower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\UtilityClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\WarpClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\XMLUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\DeferCallbacks.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\GlitchrunnerMode.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Network.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Textbook.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\ThirdPartyDeps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\UTF8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\VFormat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Vlogging.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\src\Xoshiro.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\third_party\physfs\extras\physfsrwops.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="C:\Users\max.cohen\source\Repos\VVVVVV-uugr\desktop_version\icon.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6557B50D-55B8-3904-8EDF-1419C76F5DF8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
