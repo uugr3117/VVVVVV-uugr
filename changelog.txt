@@ -16,12 +16,17 @@ V3:
  - ADDED AN OVERWORLD! the map is now completely filled out (in draft state) and can be played start-to-finish
  - nerfed "One Giant Leap", "The Untower", "Frozen Rampart", and "Bitter Arctic Depths"
  - shrank the map to 15x20
+ - first pass at backing (overworld, space station)
 
 (todo for v3)
  - add the Ultimate Challenge
- - fix the tiny level softlock (Free at Last)
  - fix tower 2nd trinket skip (make conveyor sequence before longer)
- - add backings
  - Comms Relay cutscene
- - fix icemove right press bug
+
+(todo for v4)
  - fix tinymode hitboxes
+ - tilesets for ice level + final level
+ - fix gotoposition for tower
+ - fix icemove right press bug
+ - fix the tiny level softlock (Free at Last)
+ - main level cutscenes
