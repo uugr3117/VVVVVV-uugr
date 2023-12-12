@@ -1266,13 +1266,13 @@ void gamelogic(void)
                 if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp < -14)
                 {
                     obj.entities[player].xp += 320;
-                    GOTOROOM(17, 0); //17,0
+                    GOTOROOM(game.roomx - 1,game.roomy + 19); //13,0
                 }
                 else if (INBOUNDS_VEC(player, obj.entities) && obj.entities[player].xp >= 308)
                 {
                     obj.entities[player].xp -= 320;
                     obj.entities[player].yp -= (240 * 18);
-                    GOTOROOM(19, 19); //19,19
+                    GOTOROOM(game.roomx + 1, game.roomy - 1); //19,19
                 }
             }
         }
