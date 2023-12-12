@@ -18,12 +18,16 @@ V3:
  - shrank the map to 15x20
  - first pass at backing (overworld, space station)
 
+V4 (initial release):
+ - added The Ultimate Challenge
+
 (todo for v3)
  - add the Ultimate Challenge
- - fix tower 2nd trinket skip (make conveyor sequence before longer)
  - Comms Relay cutscene
 
+
 (todo for v4)
+ - fix tower 2nd trinket skip (make conveyor sequence before longer)
  - fix tinymode hitboxes
  - tilesets for ice level + final level
  - fix gotoposition for tower
