@@ -714,6 +714,8 @@
             <edentity x="415" y="251" t="19" p1="7" p2="14" p3="0" p4="0" p5="320" p6="240">comms_cutscene_load</edentity>
             <edentity x="174" y="306" t="19" p1="2" p2="12" p3="0" p4="0" p5="320" p6="240">ship_cutscene_load</edentity>
             <edentity x="193" y="474" t="10" p1="1" p2="0" p3="0" p4="0" p5="320" p6="240"></edentity>
+            <edentity x="472" y="114" t="10" p1="1" p2="0" p3="0" p4="0" p5="320" p6="240"></edentity>
+            <edentity x="472" y="107" t="19" p1="2" p2="9" p3="0" p4="0" p5="320" p6="240">overworldmus</edentity>
             <edentity x="4000" y="3000" t="17" p1="0" p2="0" p3="0" p4="0" p5="320" p6="240">3|go_fast$comms_done$icecomplete$tinycomplete$go_small$key$$done|||</edentity>
         </edEntities>
         <levelMetaData>
