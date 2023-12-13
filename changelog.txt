@@ -19,18 +19,12 @@ V3:
  - first pass at backing (overworld, space station)
 
 V4 (initial release):
- - added The Ultimate Challenge
-
-(todo for v3)
- - add the Ultimate Challenge
- - Comms Relay cutscene
-
-
-(todo for v4)
- - fix tower 2nd trinket skip (make conveyor sequence before longer)
- - fix tinymode hitboxes
- - tilesets for ice level + final level
- - fix gotoposition for tower
- - fix icemove right press bug
- - fix the tiny level softlock (Free at Last)
- - main level cutscenes
+ - added one new trinket (3 new rooms)
+ - updated map to final draft! (mainly overworld changes and small aesthetic fixes)
+ - buffed "Downsizing"
+ - removed hub level shortcuts
+ - added option to enable upgrades from hub
+ - added level music
+ - added main level cutscenes and side terminals
+ - fixed bug with platform sizes in tower and final level
+ - fixed bugs w/progression between stages
