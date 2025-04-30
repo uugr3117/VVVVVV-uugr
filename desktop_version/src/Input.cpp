@@ -408,20 +408,8 @@ static void menuactionpress(void)
         {
 #if !defined(MAKEANDPLAY)
         case 0:
-            //Play
-            if (!game.save_exists() && !game.anything_unlocked())
-            {
-                //No saves exist, just start a new game
-                music.playef(Sound_VIRIDIAN);
-                startmode(Start_MAINGAME);
-            }
-            else
-            {
-                //Bring you to the normal playmenu
-                music.playef(Sound_VIRIDIAN);
-                game.createmenu(Menu::play);
-                map.nexttowercolour();
-            }
+            //hee hee im a modder :)
+            music.playef(Sound_CRY);
             break;
 #endif
         case 1:
@@ -439,9 +427,9 @@ static void menuactionpress(void)
             break;
         case 3:
             //Translator
-            music.playef(Sound_VIRIDIAN);
-            game.createmenu(Menu::translator_main);
-            map.nexttowercolour();
+            music.playef(Sound_CRY);
+            //game.createmenu(Menu::translator_main);
+            //map.nexttowercolour();
             break;
         case 4:
             //Credits

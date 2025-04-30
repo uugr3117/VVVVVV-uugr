@@ -1,0 +1,10 @@
+- add sprites back in again (DONE)
+- if reading not too late make actually one way (DONE)
+- softlock check text :) (DONE)
+- reload room on upgrade terminals (DONE)
+- sfx (DONE)
+- make sure disable ice is bigger scriptbox before minitower 2 (DONE)
+- add player upgrades to save/load (OBVIATED)
+- change enemy types in ss1 (OBVIATED)
+- disable "start game" from menu (DONE)
+- general difficulty increase?
